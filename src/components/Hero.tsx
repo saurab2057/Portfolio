@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="md:w-1/2 mt-8 md:mt-0 md:-ml-36">
             <div className="relative w-[200px] h-[200px] md:w-[480px] md:h-[480px] mx-auto">
               <img
-                src="\src\assets\images\Saurabphoto.jpg"
+                src="/src/assets/images/Saurabphoto.jpg"
                 alt="Profile"
                 className="rounded-full w-full h-full object-cover"
               />
