@@ -1,34 +1,34 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, X } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 py-8">
+    <footer className="bg-black py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="flex space-x-6 mb-4">
             <a
-              href="#"
+              href="https://www.facebook.com/saurav.khatiwoda.52"  // Replace with your Facebook link
               className="text-gray-400 hover:text-red-600 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="w-6 h-6" />
+              <Facebook className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/thesaurab_k01/"  // Replace with your Instagram link
               className="text-gray-400 hover:text-red-600 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="w-6 h-6" />
+              <Instagram className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://x.com/KhatiwodaSaurab"  // Replace with your X (formerly Twitter) link
               className="text-gray-400 hover:text-red-600 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twitter className="w-6 h-6" />
+              <X className="w-6 h-6" />
             </a>
           </div>
           <p className="text-gray-400 text-sm">
@@ -39,5 +39,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

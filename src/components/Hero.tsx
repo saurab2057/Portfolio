@@ -23,10 +23,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      id="home"
-      className="min-h-screen flex items-center justify-center pt-16 bg-cover bg-center"
-      style={{ backgroundImage: "url('/path/to/background-image.jpg')" }} // Set a background image
+    <div id="home" className="min-h-screen flex items-center justify-center pt-16 bg-gray-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex flex-col md:flex-row items-center justify-center">
@@ -42,8 +39,8 @@ const Hero = () => {
               {titles[currentTitleIndex]}
             </p>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 md:-ml-32">
-            <div className="relative w-[200px] h-[200px] md:w-[450px] md:h-[450px] mx-auto">
+          <div className="md:w-1/2 mt-8 md:mt-0 md:-ml-36">
+            <div className="relative w-[200px] h-[200px] md:w-[480px] md:h-[480px] mx-auto">
               <img
                 src="\src\assets\images\Saurabphoto.jpg"
                 alt="Profile"

@@ -15,7 +15,7 @@ const Skills = () => {
     {
       title: 'Programming',
       icon: <Code2 className="w-8 h-8 text-red-600" />,
-      skills: ['Python Master', 'JavaScript', 'TypeScript', 'SQL']
+      skills: ['Python', 'JavaScript', 'TypeScript', 'SQL']
     },
     {
       title: 'Design',
@@ -24,8 +24,16 @@ const Skills = () => {
     }
   ];
 
+  const Myskills = [
+    { name: 'Python', level: 90 },
+    { name: 'React', level: 85 },
+    { name: 'Django', level: 80 },
+    { name: 'UI/UX Design', level: 75 },
+    { name: 'Photoshop', level: 70 },
+  ];
+
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-10 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
         
@@ -50,7 +58,28 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
+
+          {/* Skill Bars */}
+        <div className="mt-12 bg-gray-800 p-6 rounded-lg">
+          <div className="space-y-4">
+            {Myskills.map((skill, index) => (
+              <div key={index} className="space-y-1">
+                <div className="flex justify-between">
+                  <span className="text-gray-300">{skill.name}</span>
+                  <span className="text-gray-300">{skill.level}%</span>
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-3">
+                  <div
+                    className="bg-red-600 h-3 rounded-full transition-all duration-500"
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>  
     </section>
   );
 };
